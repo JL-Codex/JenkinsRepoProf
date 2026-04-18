@@ -20,4 +20,4 @@ WORKDIR /app
 COPY --from=builder /app/target/*.jar /app/app.jar
 
 # Run the Java application
-CMD ["sh", "-c", "java -jar target/*.jar"]
+CMD ["java", "-jar", "/app/app.jar"]
